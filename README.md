@@ -1,10 +1,10 @@
 ## Live Chat  
 
-A sample chat application made to learn Node, Express, and Backbone. You can see the live demo at just-a-chatroom.herokuapp.com
-
-![alt text](https://cldup.com/EmKarbnQm5.png)  
+A sample chat application made to learn Node, Socket.io, and Backbone. You can see the live demo at just-a-chatroom.herokuapp.com
 
 ![alt text](https://cldup.com/BT5wuapuSP.png)
+
+![alt text](https://cldup.com/EmKarbnQm5.png)  
 
 Resources:  
 http://www.sitepoint.com/chat-application-using-socket-io/  

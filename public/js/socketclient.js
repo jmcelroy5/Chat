@@ -7,7 +7,7 @@ var ChatClient = function(options){
 	// app event bus
 	self.vent = options.vent;
 
-	self.hostname = 'http://localhost:1234';
+	self.hostname = "http://" + window.location.host;
 
 	// connects to the server
 	self.connect = function() {
@@ -33,7 +33,6 @@ var ChatClient = function(options){
 		socket.on('loginSuccess', function(username){
 			self.vent.trigger('loginSuccess', username);
 			self.socket.emit('onlineUsers');
-			console.log("online users requested...")
 		});
 
 		socket.on('onlineUsers', function(onlineUsers){

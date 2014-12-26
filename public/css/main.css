@@ -1,0 +1,92 @@
+/* Set style for html document body */
+html,body { height:100%;}
+body {
+	font-size:76%;
+	padding:0;
+	margin:0;
+	background-color: #dddddd;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+a {
+	color:#0033cc;
+}
+
+/* Wrapper for chat box & form */
+.wrapper {
+	text-align:left;
+	margin:20px auto 0 auto;
+	width:1000px;
+	height:500px;
+}
+
+/* Chat form */
+.chat-form {
+	padding:10px 0 5px 0;
+	text-align:left;
+	width: 80%;
+}
+
+.chat-form input {
+	width:70%;
+	margin-top:10px;
+	font-family:Arial;
+	font-size:16px;
+	/*border: 1px solid black;*/
+	border-radius: 3px;
+	background-color: rgb(160, 249, 202);
+}
+
+.chat-form button {
+	width:70px;
+	font-family:Arial;
+	font-size:16px;
+	padding: 5px;
+	background-color: rgb(160, 249, 202);
+}
+
+/* Chat messages */
+.chat-messages-wrapper {
+	padding: 8px;
+	background-color:#fff;	
+	overflow:auto;
+	border:solid 1px #fff;
+	clear:both;
+	height:90%;
+	width: 700px;
+	float: left;
+}
+
+.chat-message {
+	font-size:12px;
+	line-height:1.5em;
+	padding:2px 3px 2px 3px;
+	margin:0 0 2px 0;
+}
+.chat-message .chat-message-timestamp {
+	display:none;
+}
+
+.chat-message .chat-message-content {
+	display:inline;
+}
+
+/* Online users sidebar */
+
+.online-users-wrapper {
+	width: 275px;
+	height: 90%;
+	background-color: rgb(160, 249, 202);
+	float: right;
+}
+
+/* Login Form */
+
+#login {
+	background: #fff;
+	padding: 20px;
+	width: 60%;
+	margin: 50px auto 0 auto;
+}
+

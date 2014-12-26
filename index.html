@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<title>BackChat</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen" />
+  </head>
+  <body>
+
+  <!-- The wrapper HTML -->
+  <div class="wrapper">
+    
+    <div class="chat-messages-wrapper">
+      <div id="login">
+        <h1> Hi there! </h1>
+        <h2>Choose a username to enter the chat:</h2>
+        <input type="text" />
+        <button id="submit-username">Enter</button>
+      </div>
+    </div>
+    <div class="online-users-wrapper"></div>
+    <div class="chat-form-wrapper"></div>
+
+  </div>
+
+  <!-- The handlebars template for the messages view -->
+  <script id="chat-messages-template" type="text/x-handlebars-template">
+    {{#each messages}}
+      <div class="chat-message">
+        {{#if sender}}
+        <strong>{{sender}}:</strong>
+        <div class="chat-message-content">{{text}}</div>
+        <div class="chat-message-timestamp">({{time}})</div>
+        {{else}}
+        <div class="chat-message-content"><strong>{{text}}</strong></div>
+        <div class="chat-message-timestamp">({{time}})</div>
+        {{/if}}
+      </div>
+    {{/each}}
+	</script>
+  
+  <!-- Online users view -->
+  <script id="online-users-template" type="text/x-handlebars-template">
+    <div class="online-users">
+    <h2>Online Users</h2>
+      <ul>
+        {{#each users}}
+        <li>{{name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </script>
+
+  <!-- Message Send Form -->
+  <script id="chat-form-template" type="text/x-handlebars-template">
+   <form class="chat-form">
+		<input type="text" name="content" size="100" />
+	  <button type="submit" class="form-submit">Send</button>
+   </form>
+  </script>
+
+  <!-- The required libraries -->
+  <script src="/js/lib/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/lib/underscore.js" type="text/javascript"></script>
+  <script src="/js/lib/backbone.js" type="text/javascript"></script>
+  <script src="/js/lib/handlebars.js" type="text/javascript"></script>
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+  <!-- Custom JS -->
+  <script src="/js/models.js" type="text/javascript"></script>
+  <script src="/js/views/views.js" type="text/javascript"></script>
+  <script src="/js/app.js" type="text/javascript"></script>
+  <script src="/js/socketclient.js" type="text/javascript"></script>
+  </body>
+</html>

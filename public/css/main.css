@@ -36,7 +36,7 @@ a {
 	font-size:16px;
 	/*border: 1px solid black;*/
 	border-radius: 3px;
-	background-color: rgb(160, 249, 202);
+	background-color: aliceblue;
 }
 
 .chat-form button {
@@ -44,7 +44,7 @@ a {
 	font-family:Arial;
 	font-size:16px;
 	padding: 5px;
-	background-color: rgb(160, 249, 202);
+	background-color: aliceblue;
 }
 
 /* Chat messages */
@@ -77,8 +77,8 @@ a {
 
 .online-users-wrapper {
 	width: 275px;
-	height: 93%;
-	background-color: rgb(160, 249, 202);
+	height: 90%;
+	background-color: aliceblue;
 	float: right;
 	text-align: center;
 	padding-top:20px;
@@ -89,6 +89,9 @@ a {
 	padding: 5px;
 	width:50%;
 	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 2px;
 }
 
 /* Login Form */

@@ -7,8 +7,7 @@ A sample chat application made to learn Node, Socket.io, and Backbone. You can s
 ![alt text](https://cldup.com/EmKarbnQm5.png)  
 
 Resources:  
-http://www.sitepoint.com/chat-application-using-socket-io/  
-http://julieatappacademy.tumblr.com/post/73267814632/week-8-day-1
+http://www.sitepoint.com/chat-application-using-socket-io/  s
 http://code.tutsplus.com/tutorials/real-time-chat-with-nodejs-socketio-and-expressjs--net-31708  
 http://www.teaching-materials.org/backbone/exercise1_models.html  
 http://julieatappacademy.tumblr.com/post/73267814632/week-8-day-1

@@ -13,7 +13,7 @@
     <div class="chat-messages-wrapper">
       <div id="login">
         <h1> Hi there! </h1>
-        <h2>Choose a username to enter the chat:</h2>
+        <h3>Choose a username to enter the chat:</h3>
         <input type="text" />
         <button id="submit-username">Enter</button>
       </div>
@@ -43,11 +43,9 @@
   <script id="online-users-template" type="text/x-handlebars-template">
     <div class="online-users">
     <h2>Online Users</h2>
-      <ul>
         {{#each users}}
-        <li>{{name}}</li>
+        <div class="online-user">{{name}}</div>
         {{/each}}
-      </ul>
     </div>
   </script>
 

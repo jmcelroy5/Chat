@@ -26,7 +26,7 @@ a {
 	padding:10px 0 5px 0;
 	text-align:left;
 	width: 80%;
-	margin-left: 20px;
+	margin-left: 20px s;
 }
 
 .chat-form input {
@@ -77,9 +77,18 @@ a {
 
 .online-users-wrapper {
 	width: 275px;
-	height: 90%;
+	height: 93%;
 	background-color: rgb(160, 249, 202);
 	float: right;
+	text-align: center;
+	padding-top:20px;
+}
+
+.online-user {
+	background-color: white;
+	padding: 5px;
+	width:50%;
+	margin: 0 auto;
 }
 
 /* Login Form */

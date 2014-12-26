@@ -67,10 +67,12 @@ var MainController = function(){
 	});
 
 	self.appEventBus.on("onlineUsers", function(users){
+		var userModels = [];
 		for (var i=0; i < users.length; i++) {
-			self.onlineUsers.add(new User({name:users[i]}));
-			console.log("adding user: " + users[i]);
+			user = new User({name:users[i]});
+			userModels.push(user);
 		}
+		self.onlineUsers.reset(userModels);
 	}.bind(this));
 
 	self.appEventBus.on("userLeft", function(username){
